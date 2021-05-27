@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 interface roboticaProps {
 
-    id?:string
+  id?: string
 }
 
 const Iframe = styled.iframe`
@@ -15,13 +15,16 @@ const Wrap = styled.div`
   margin: 3rem 8rem;
 `;
 
-export default function Robotica({id}: roboticaProps) {
+export default function Robotica({ id }: roboticaProps) {
   return (
     <Wrap id={id}>
-      <div style={{flex:"1"}}>
+      <div style={{ flex: "1" }}>
         <h1>Robótica na TI</h1>
-        <p>Apresentação feita como primeira nota de PAC</p>
-        <p>Aprofundamento do tema de Robótica aplicada na TI</p>
+        <p>O grupo desenvolveu um projeto chamado Return 0, onde consiste em entrevistar players do mercado de TI. </p>
+
+        <p>O bate papo foi realizado com 3 profissionais da área.
+Alexandre Vasques - CTO da HoloLab, Jean Grahl - Product Owner na Agapys Tecnologia e Marcelo Gramigna - Diretor da Associação Brasileira de Internet Industrial </p>
+        <p>Temas como Industria 4.0, Robótica na TI e Inteligencia Artificial foram os destaques da conversa que você pode conferir no vídeo ao lado. </p>
       </div>
       <Iframe
         width="560"
