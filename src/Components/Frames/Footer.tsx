@@ -7,6 +7,8 @@ import Josue from "../../img/josue.png";
 import Julio from "../../img/julio.png";
 import Member from "./Member";
 
+import {memberDescription} from '../../texts'
+
 const WrapFooter = styled.footer`
   background-color: #232323;
   height: 60vh;
@@ -29,27 +31,27 @@ export default function () {
       <GridMembers>
         <Member
           name="Thuany Souza"
-          description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book"
+          description={memberDescription.thuany}
           img={Thuany}
         />
         <Member
           name="Josué Laurindo"
-          description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book"
+          description={memberDescription.josue}
           img={Josue}
         />
         <Member
           name="Kleber Keuze"
-          description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book"
+          description={memberDescription.kleber}
           img={Kleber}
         />
         <Member
           name="Bruno Langer"
-          description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book"
+          description={memberDescription.langer}
           img={Langer}
         />
         <Member
           name="Julio Marcon"
-          description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book"
+          description={memberDescription.julio}
           img={Julio}
         />
       </GridMembers>

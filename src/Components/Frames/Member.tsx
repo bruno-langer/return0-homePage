@@ -15,6 +15,7 @@ const WrapMember = styled.div`
   align-items: center;
   justify-content: space-evenly;
   max-width: 30vw;
+  min-width: 20vw;
   height: 12vh;
   padding: 0.3rem;
   color: white;
@@ -36,7 +37,13 @@ const WrapText = styled.aside`
   max-height: 90%;
 
   strong{
-      font-size:1.1rem
+      font-size:1.1rem;
+  }
+
+  p{
+      line-height: 1.2rem;
+      margin: 0;
+      margin-top:.3rem;
   }
 `;
 export default function Member({ name, description, img }: memberProps) {
