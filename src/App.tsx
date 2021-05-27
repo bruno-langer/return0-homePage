@@ -2,8 +2,10 @@ import React from "react";
 import Header from "./Components/Frames/Header";
 import Footer from "./Components/Frames/Footer";
 import Robotica from "./Pages/Robotica";
-import Arduino from "./Pages/Arduino";
+import SeguidorLinha from "./Pages/SeguidorLinha";
 import styled from "styled-components";
+
+
 
 const MainContent = styled.div`
   height: 89vh;
@@ -25,20 +27,7 @@ function App() {
       <Header />
       <MainContent id="main-content">
         <Robotica id="robotica" />
-        <Arduino />
-        <Robotica />
-        <Robotica />
-        <Robotica />
-        <Robotica />
-        <Robotica />
-        <Robotica id="arduino" />
-        <Robotica />
-        <Robotica />
-        <Robotica />
-        <Robotica />
-        <Robotica />
-        <Robotica id="projeto" />
-        <Robotica id="projeto" />
+        <SeguidorLinha id="projeto" />
         <Footer />
       </MainContent>
     </>
