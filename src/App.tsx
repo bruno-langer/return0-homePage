@@ -25,18 +25,6 @@ function App() {
       <Header />
       <MainContent id="main-content">
         <Robotica id="robotica"/>
-        <Arduino />
-        <Robotica />
-        <Robotica />
-        <Robotica />
-        <Robotica />
-        <Robotica />
-        <Robotica id="arduino"/>
-        <Robotica />
-        <Robotica />
-        <Robotica />
-        <Robotica />
-        <Robotica />
         <Robotica id="projeto" />
         <Robotica id="projeto" />
         <Footer/>
