@@ -2,6 +2,7 @@ import React from "react";
 import Header from "./Components/Frames/Header";
 import Footer from "./Components/Frames/Footer";
 import Robotica from "./Pages/Robotica";
+import Group from "./Pages/Group";
 import CircuitoSeguidorLinha from "./Pages/CircuitoSeguidorLinha";
 import ProgramaSeguidorLinha from "./Pages/ProgramaSeguidorLinha";
 import styled from "styled-components";
@@ -25,6 +26,7 @@ function App() {
     <>
       <Header />
       <MainContent id="main-content">
+        <Group id="group"/>
         <Robotica id="robotica" />
         <CircuitoSeguidorLinha id="projeto" />
         <ProgramaSeguidorLinha id="projeto" />

@@ -7,18 +7,29 @@ interface programaSeguidorLinhaProps {
 
 const Wrap = styled.div`
   display: flex;
-  margin: 3rem 8rem;
+  margin: 2rem 7rem;
+  padding: 2rem;
+  border-radius: 1rem;
+  transition: box-shadow 0.3s;
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: 20px 20px 60px #cbcbcb, -20px -20px 60px #fdfdfd;
+  }
 `;
 
 const Img = styled.img`
   width: 560px;
+  border-radius: 2rem;
+  box-shadow: 0 0 60px rgba(0, 0, 0, 0.1);
+
 `
 
 
 export default function CircuitoSeguidorLinha({ id }: programaSeguidorLinhaProps) {
   return <Wrap id={id}>
     <div style={{ flex: "1" }}>
-      <h1>Circuito do Robô Seguidor de Linha</h1>
+      <h1>Programa do Robô Seguidor de Linha</h1>
       <p>Circuito Simulado com o Thinkercard</p>
       <p>Para Leitura da linha, foram utilizados fotorresistores</p>
       <p>Para sinalização do comando atualmente sendo executado pelo robo, foi utilizado um led RGB</p>

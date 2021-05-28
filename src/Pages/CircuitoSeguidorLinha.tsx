@@ -7,11 +7,22 @@ interface circuitoSeguidorLinhaProps {
 
 const Wrap = styled.div`
   display: flex;
-  margin: 3rem 8rem;
+  margin: 2rem 7rem;
+  padding: 2rem;
+  border-radius: 1rem;
+  transition: box-shadow 0.3s;
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: 20px 20px 60px #cbcbcb, -20px -20px 60px #fdfdfd;
+  }
 `;
 
 const Img = styled.img`
   width: 560px;
+  border-radius: 2rem;
+  box-shadow: 0 0 60px rgba(0, 0, 0, 0.1);
+
 `
 
 
