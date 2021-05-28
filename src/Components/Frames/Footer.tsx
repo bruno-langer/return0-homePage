@@ -7,7 +7,7 @@ import Josue from "../../img/josue.png";
 import Julio from "../../img/julio.png";
 import Member from "./Member";
 
-import {memberDescription} from '../../texts'
+import { memberDescription } from "../../texts";
 
 const WrapFooter = styled.footer`
   background-color: #232323;
@@ -30,9 +30,9 @@ export default function () {
     <WrapFooter>
       <GridMembers>
         <Member
-          name="Thuany Souza"
-          description={memberDescription.thuany}
-          img={Thuany}
+          name="Bruno Langer"
+          description={memberDescription.langer}
+          img={Langer}
         />
         <Member
           name="Josué Laurindo"
@@ -40,19 +40,19 @@ export default function () {
           img={Josue}
         />
         <Member
+          name="Julio Marcon"
+          description={memberDescription.julio}
+          img={Julio}
+        />
+        <Member
           name="Kleber Keuze"
           description={memberDescription.kleber}
           img={Kleber}
         />
         <Member
-          name="Bruno Langer"
-          description={memberDescription.langer}
-          img={Langer}
-        />
-        <Member
-          name="Julio Marcon"
-          description={memberDescription.julio}
-          img={Julio}
+          name="Thuany Souza"
+          description={memberDescription.thuany}
+          img={Thuany}
         />
       </GridMembers>
       <Logo fill="white" />
