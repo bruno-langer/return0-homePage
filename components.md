@@ -19,10 +19,17 @@ O motor CC funciona a partir do princípio da atração e repulsão de campos el
 
 ### Acionador de motor de ponte H
 
-O Acionador de motor de ponte H tem como principal função o controle de velocidade e sentido de motores DC escovados, podendo também ser usado para controle da saída de um gerador DC ou como inversor monofásico. O termo Ponte H, é derivado da representação gráfica típica deste circuito.
+O Acionador de motor de ponte H tem como principal função o controle de velocidade e sentido de motores DC, podendo também ser usado para controle da saída de um gerador DC ou como inversor monofásico.
 
-Placa de ensaio mini - Uma placa de ensaio ou matriz de contato (ou protoboard, ou breadboard em inglês) é uma placa com furos (ou orifícios) e conexões condutoras ultilizada para a montagem de protótipos e projetos em estado inicial.
+### Protoboard
 
-Bateria 9V - Uma bateria é um aparelho ou dispositivo que transforma em corrente elétrica a energia desenvolvida numa reação química. Cada célula de uma bateria contém um terminal positivo e um terminal negativo . O processo químico de troca de elétrons é conhecido como oxirredução
+Uma protoboard é uma placa com furos e conexões elétricas ultilizada para a montagem de protótipos e projetos em estado inicial.
 
-Arduíno - As placas Arduino possuem funcionamento semelhante ao de um pequeno computador, no qual, pode-se programar a maneira como suas entradas e saídas devem se comportar em meio aos diversos componentes externos que podem ser conectados nas mesmas.
+### Bateria 9V
+
+Uma bateria é um dispositivo que transforma em corrente elétrica a energia desenvolvida em reações químicas. Cada célula de uma bateria contém um terminal positivo e um terminal negativo .
+
+### Arduíno
+
+Arduino é uma placa de desenvolvimento open source, cuja função é tornar pequenos projetos possíveis.
+Possui incorporado na placa um microcontrolador, que é programado com a linguagem C++, entradas digitais e analógicas, saídas digitais e saídas PWM que permitem o controle de atuadores e a leitura de sensores.
