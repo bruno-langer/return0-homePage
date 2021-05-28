@@ -23,12 +23,14 @@ const WrapMember = styled.div`
   box-shadow: 20px 20px 60px #101010, -20px -20px 60px #6a6a6a33;
   font-size: 0.8rem;
   margin: 1rem;
+
   /* border:solid 1px white; */
 `;
 
 const PersonIcon = styled.img`
   height: 90%;
   border-radius: 50%;
+  box-shadow:inset 0px 0px 30px rgba(0,0,0,0.1);
   /* object-fit: contain; */
 `;
 

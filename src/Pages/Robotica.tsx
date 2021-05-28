@@ -21,8 +21,8 @@ export default function Robotica({ id }: roboticaProps) {
       <div style={{ flex: "1" }}>
         <h1>Robótica na TI</h1>
         <p>O grupo desenvolveu um projeto chamado Return 0, onde consiste em entrevistar players do mercado de TI. </p>
-        <p>O bate papo foi realizado com 3 profissionais da área: Alexandre Vasques - CTO da HoloLab, Jean Grahl - Product Owner na Agapys Tecnologia e Marcelo Gramigna - Diretor da Associação Brasileira de Internet Industrial </p>
-        <p>Temas como Industria 4.0, Robótica na TI e Inteligencia Artificial foram os destaques da conversa que você pode conferir no vídeo ao lado. </p>
+        <p>O bate papo foi realizado com <strong>3 profissionais</strong> da área: Alexandre Vasques - CTO da HoloLab, Jean Grahl - Product Owner na Agapys Tecnologia e Marcelo Gramigna - Diretor da Associação Brasileira de <strong>Internet Industrial</strong> </p>
+        <p>Temas como <strong>Industria 4.0</strong>, Robótica na TI e Inteligencia Artificial foram os destaques da conversa que você pode conferir no <strong> vídeo</strong> ao lado. </p>
       </div>
       <Iframe
         width="560"

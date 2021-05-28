@@ -4,7 +4,6 @@ const memberDescription = {
     josue:"Com 20 anos de idade, acadêmico de engenharia de software.Atua na área de desenvolvimento de software e tem por hobby a música, seriados e filmes.",
     langer:"Com 21 anos de idade, acadêmico de engenharia de software. Trabalha área de automação e IOT e nas horas livres gosta de acampar e fotografrar",
     julio:"Com 24 anos de idade, acadêmico de engenharia de software e com objetivo de trabalhar na área em que se desenvolve. Seus hobbys principais são músicas e jogos",
-
 }
 
 
