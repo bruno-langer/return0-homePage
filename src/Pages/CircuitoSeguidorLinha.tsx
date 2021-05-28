@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import CircuitoSegueLinhaImage from "../img/circuitoSegueLinha.png";
 
-interface seguidorLinhaProps {
+interface circuitoSeguidorLinhaProps {
   id: string
 }
 
@@ -15,7 +15,7 @@ const Img = styled.img`
 `
 
 
-export default function SeguidorLinha({ id }: seguidorLinhaProps) {
+export default function CircuitoSeguidorLinha({ id }: circuitoSeguidorLinhaProps) {
   return <Wrap id={id}>
     <div style={{ flex: "1" }}>
       <h1>Circuito do Robô Seguidor de Linha</h1>

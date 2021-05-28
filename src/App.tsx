@@ -2,10 +2,9 @@ import React from "react";
 import Header from "./Components/Frames/Header";
 import Footer from "./Components/Frames/Footer";
 import Robotica from "./Pages/Robotica";
-import SeguidorLinha from "./Pages/SeguidorLinha";
+import CircuitoSeguidorLinha from "./Pages/CircuitoSeguidorLinha";
+import ProgramaSeguidorLinha from "./Pages/ProgramaSeguidorLinha";
 import styled from "styled-components";
-
-
 
 const MainContent = styled.div`
   height: 89vh;
@@ -27,7 +26,8 @@ function App() {
       <Header />
       <MainContent id="main-content">
         <Robotica id="robotica" />
-        <SeguidorLinha id="projeto" />
+        <CircuitoSeguidorLinha id="projeto" />
+        <ProgramaSeguidorLinha id="projeto" />
         <Footer />
       </MainContent>
     </>
@@ -36,11 +36,9 @@ function App() {
 
 export default App;
 
-
-
 // N2 - Descrição das atividades e avaliação: 
 //  OK  1. Logo do grupo e nome do grupo. (1,0)
-// NOK  2. Integrantes dos grupo. (1,0)
+//  OK  2. Integrantes dos grupo. (1,0)
 // NOK  3. Uma introdução sobre o grupo. (2,0)
 // NOK  4. Vídeo institucional por que robótica na TI?
 //         (Tem que ter com uma breve explicação do trabalho) (2,0)
