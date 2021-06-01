@@ -63,12 +63,6 @@ export default function Robotica({ id }: roboticaProps) {
           allowFullScreen
         />
       </div>
-
-      {open ? (
-        <>
-          <p>esse texto está escondido</p>
-        </>
-      ) : null}
     </Wrap>
   );
 }

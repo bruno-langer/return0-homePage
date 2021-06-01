@@ -28,8 +28,8 @@ function App() {
       <MainContent id="main-content">
         <Group id="group"/>
         <Robotica id="robotica" />
-        <CircuitoSeguidorLinha id="projeto" />
-        <ProgramaSeguidorLinha id="projeto" />
+        <CircuitoSeguidorLinha id="circuit" />
+        <ProgramaSeguidorLinha id="program" />
         <Footer />
       </MainContent>
     </>
