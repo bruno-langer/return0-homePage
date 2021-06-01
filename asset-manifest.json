@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.js": "/return0-homepage/static/js/main.79efb3be.chunk.js",
-    "main.js.map": "/return0-homepage/static/js/main.79efb3be.chunk.js.map",
-    "runtime-main.js": "/return0-homepage/static/js/runtime-main.72b70119.js",
-    "runtime-main.js.map": "/return0-homepage/static/js/runtime-main.72b70119.js.map",
-    "static/js/2.483432d5.chunk.js": "/return0-homepage/static/js/2.483432d5.chunk.js",
-    "static/js/2.483432d5.chunk.js.map": "/return0-homepage/static/js/2.483432d5.chunk.js.map",
-    "index.html": "/return0-homepage/index.html",
-    "static/js/2.483432d5.chunk.js.LICENSE.txt": "/return0-homepage/static/js/2.483432d5.chunk.js.LICENSE.txt",
-    "static/media/circuitoSegueLinha.f9d17e8e.png": "/return0-homepage/static/media/circuitoSegueLinha.f9d17e8e.png",
-    "static/media/josue.9da5e724.png": "/return0-homepage/static/media/josue.9da5e724.png",
-    "static/media/julio.7d9d08d1.png": "/return0-homepage/static/media/julio.7d9d08d1.png",
-    "static/media/kleber.56c6c9f6.png": "/return0-homepage/static/media/kleber.56c6c9f6.png",
-    "static/media/langer.801188b8.jpg": "/return0-homepage/static/media/langer.801188b8.jpg",
-    "static/media/nav-logo.db8ce006.svg": "/return0-homepage/static/media/nav-logo.db8ce006.svg",
-    "static/media/return0-logo.14dd64c2.png": "/return0-homepage/static/media/return0-logo.14dd64c2.png",
-    "static/media/thuany.363114ef.png": "/return0-homepage/static/media/thuany.363114ef.png"
+    "main.js": "/static/js/main.b84ab95c.chunk.js",
+    "main.js.map": "/static/js/main.b84ab95c.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.4e982240.js",
+    "runtime-main.js.map": "/static/js/runtime-main.4e982240.js.map",
+    "static/js/2.8eba68a2.chunk.js": "/static/js/2.8eba68a2.chunk.js",
+    "static/js/2.8eba68a2.chunk.js.map": "/static/js/2.8eba68a2.chunk.js.map",
+    "index.html": "/index.html",
+    "static/js/2.8eba68a2.chunk.js.LICENSE.txt": "/static/js/2.8eba68a2.chunk.js.LICENSE.txt",
+    "static/media/circuitoSegueLinha.f9d17e8e.png": "/static/media/circuitoSegueLinha.f9d17e8e.png",
+    "static/media/josue.9da5e724.png": "/static/media/josue.9da5e724.png",
+    "static/media/julio.7d9d08d1.png": "/static/media/julio.7d9d08d1.png",
+    "static/media/kleber.56c6c9f6.png": "/static/media/kleber.56c6c9f6.png",
+    "static/media/langer.801188b8.jpg": "/static/media/langer.801188b8.jpg",
+    "static/media/nav-logo.8b3c8ea6.svg": "/static/media/nav-logo.8b3c8ea6.svg",
+    "static/media/return0-logo.14dd64c2.png": "/static/media/return0-logo.14dd64c2.png",
+    "static/media/thuany.363114ef.png": "/static/media/thuany.363114ef.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.72b70119.js",
-    "static/js/2.483432d5.chunk.js",
-    "static/js/main.79efb3be.chunk.js"
+    "static/js/runtime-main.4e982240.js",
+    "static/js/2.8eba68a2.chunk.js",
+    "static/js/main.b84ab95c.chunk.js"
   ]
 }
