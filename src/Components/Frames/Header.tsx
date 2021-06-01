@@ -68,14 +68,9 @@ export default function Header({}: headerProps) {
     console.log(mainContent);
     
     if (mainContent) {
-      mainContent.onscroll = () => {
-        console.log(123);
-        
+      mainContent.onscroll = () => {        
         const winScroll =
           mainContent.scrollTop || document.documentElement.scrollTop;
-
-        console.log(mainContent.scrollHeight);
-        console.log(mainContent.clientHeight);
         const height = mainContent.scrollHeight - mainContent.clientHeight;
         setScroll((winScroll / height) * 100);
       };
@@ -84,16 +79,20 @@ export default function Header({}: headerProps) {
 
   const links = [
     {
+      title: "O Grupo",
+      path: "group",
+    },
+    {
       title: "Robótica e TI",
       path: "robotica",
     },
     {
-      title: "Arduino Básico",
-      path: "arduino",
+      title: "Circuito Robô",
+      path: "circuit",
     },
     {
-      title: "Seguidor Linha",
-      path: "projeto",
+      title: "Programa Robô",
+      path: "program",
     },
   ];
 
