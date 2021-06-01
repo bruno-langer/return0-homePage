@@ -45,3 +45,133 @@ Uma bateria é um dispositivo que transforma em corrente elétrica a energia des
 
 Arduino é uma placa de desenvolvimento open source, cuja função é tornar pequenos projetos possíveis.
 Possui incorporado na placa um microcontrolador, que é programado com a linguagem C++, entradas digitais e analógicas, saídas digitais e saídas PWM que permitem o controle de atuadores e a leitura de sensores.
+
+### Programa
+
+O programa feito em C++ para controle do robô nesta fase inicial, consiste de um algoritmo que lê os sensores, e retorna um comando, podendo esse comando ser:
+Mover para a frente
+Mover para a direita
+Mover para trás
+
+Inicialmente, com os defines, são definidos os pinos do arduino, para serem utilizados no código.
+
+No void setup() temos as configurações dos pinos, e da porta serial utilizada para debug do programa;
+
+O void loop(), inicialmente lê o valor dos sensores, e então imprime na porta serial;
+
+Após ler as entradas analógicas, o software então toma a decisão entre os 4 possiveis comandos (Frente, direita, esquerda, parado), buscando se manter sempre sobre a "linha";
+
+```C++
+// MOTOR
+#define IN1 2
+#define ENA 3
+#define IN2 4
+#define IN3 5
+#define ENB 6
+#define IN4 7
+
+// LED RGB
+#define LEDG 9
+#define LEDB 10
+#define LEDR 11
+
+// SENSOR
+#define S1 A0
+#define S2 A1
+#define S3 A2
+#define S4 A3
+
+void setup()
+{
+  // MOTOR
+  pinMode(IN1,OUTPUT);
+  pinMode(IN2,OUTPUT);
+  pinMode(IN3,OUTPUT);
+  pinMode(IN4,OUTPUT);
+  pinMode(ENA,OUTPUT);
+  pinMode(ENB,OUTPUT);
+  analogWrite(ENA,255);
+  analogWrite(ENB,255);
+
+  // LED RGB
+  pinMode(LEDR, OUTPUT);
+  pinMode(LEDB, OUTPUT);
+  pinMode(LEDG, OUTPUT);
+
+  Serial.begin(9600);
+}
+
+void loop()
+{
+  // Leitura dos sensores
+  int s1, s2, s3, s4;
+
+  s1=analogRead(S1);
+  s2=analogRead(S2);
+  s3=analogRead(S3);
+  s4=analogRead(S4);
+
+  int luz = 500;
+
+  Serial.print(s1);
+  Serial.print(" ");
+  Serial.print(s2);
+  Serial.print(" ");
+  Serial.print(s3);
+  Serial.print(" ");
+  Serial.print(s4);
+  Serial.print(" ");
+
+  if(s1<luz && s2>luz && s3>luz && s4<luz){
+    //frente
+    Serial.println(" Frente ");
+
+    digitalWrite(LEDR, LOW);
+    digitalWrite(LEDG, HIGH);
+    digitalWrite(LEDB, LOW);
+
+    digitalWrite(IN1,HIGH);
+  	digitalWrite(IN2,LOW);
+  	digitalWrite(IN3,LOW);
+  	digitalWrite(IN4,HIGH);
+  }else if (s1>luz && s2<luz && s3<luz && s4<luz){
+    // direita
+    Serial.println(" Direita ");
+
+    digitalWrite(LEDR, HIGH);
+    digitalWrite(LEDG, LOW);
+    digitalWrite(LEDB, LOW);
+
+    digitalWrite(IN1,LOW);
+    digitalWrite(IN2,HIGH);
+    digitalWrite(IN3,LOW);
+    digitalWrite(IN4,HIGH);
+  }else if (s1<luz && s2<luz && s3<luz && s4>luz){
+    // esquerda
+    Serial.println(" Esquerda ");
+
+    digitalWrite(LEDR, HIGH);
+    digitalWrite(LEDG, LOW);
+    digitalWrite(LEDB, LOW);
+
+    digitalWrite(IN1,HIGH);
+    digitalWrite(IN2,LOW);
+    digitalWrite(IN3,HIGH);
+    digitalWrite(IN4,LOW);
+  }else{
+    // desligado
+    Serial.println(" Parado ");
+
+    digitalWrite(LEDR, LOW);
+    digitalWrite(LEDG, LOW);
+    digitalWrite(LEDB, HIGH);
+
+
+    digitalWrite(IN1,LOW);
+    digitalWrite(IN2,LOW);
+    digitalWrite(IN3,LOW);
+    digitalWrite(IN4,LOW);
+  }
+}
+
+```
