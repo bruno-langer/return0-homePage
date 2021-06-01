@@ -14,6 +14,7 @@ const Img = styled.img`
   width:200px;
 `;
 export default function Group({ id }: groupProps) {
+  
   return (
     <Wrap id={id}>
       <div style={{ flex: "1" }}>

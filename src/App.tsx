@@ -23,7 +23,7 @@ const MainContent = styled.div`
 
 function App() {
   return (
-    <>
+    <div>
       <Header />
       <MainContent id="main-content">
         <Group id="group"/>
@@ -32,7 +32,7 @@ function App() {
         <ProgramaSeguidorLinha id="program" />
         <Footer />
       </MainContent>
-    </>
+    </div>
   );
 }
 

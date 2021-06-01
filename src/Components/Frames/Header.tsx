@@ -12,15 +12,13 @@ const WrapHeader = styled.header`
   flex-direction: column;
   height: 11vh;
   background-color: #e4e4e4;
-  box-shadow: 0 0 60px rgba(0,0,0,0.3);
-
+  box-shadow: 0 0 60px rgba(0, 0, 0, 0.3);
 `;
 const LogoWrap = styled.div`
   flex: 1;
   display: flex;
   align-items: center;
   justify-content: center;
-
 
   & img {
     width: 7rem;
@@ -66,9 +64,9 @@ export default function Header({}: headerProps) {
   useEffect(() => {
     const mainContent = document.getElementById("main-content");
     console.log(mainContent);
-    
+
     if (mainContent) {
-      mainContent.onscroll = () => {        
+      mainContent.onscroll = () => {
         const winScroll =
           mainContent.scrollTop || document.documentElement.scrollTop;
         const height = mainContent.scrollHeight - mainContent.clientHeight;

@@ -25,7 +25,7 @@ const GridMembers = styled.div`
   justify-content: space-evenly;
 `;
 
-export default function () {
+export default function Footer() {
   return (
     <WrapFooter>
       <GridMembers>
