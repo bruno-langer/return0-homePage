@@ -12,7 +12,7 @@ Dentre os componentes estão os seguintes:
 
 ## Fotorresistor
 
-Um fotorresistor pode ser usado para a construção de sensores de luminosidade, controle de flashs de câmeras, alarmes, controle de lâmpadas, entre outros projetos que interagem com luz.
+    Um fotorresistor pode ser usado para a construção de sensores de luminosidade, controle de flashs de câmeras, alarmes, controle de lâmpadas, entre outros projetos que interagem com luz.
 
 ## Led RGB
 

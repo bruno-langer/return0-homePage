@@ -1,6 +1,6 @@
 import { useState } from "react";
 import styled from "styled-components";
-import CircuitoSegueLinhaImage from "../img/circuitoSegueLinha.png";
+import ArduinoIDE from "../img/arduinoIDE.png";
 
 interface programaSeguidorLinhaProps {
   id: string;
@@ -41,21 +41,22 @@ export default function CircuitoSeguidorLinha({
       <div style={{ display: "flex" }}>
         <div style={{ flex: "1" }}>
           <h1>Programa do Robô Seguidor de Linha</h1>
-          <p>Circuito Simulado com o Thinkercard</p>
-          <p>Para Leitura da linha, foram utilizados fotorresistores</p>
           <p>
-            Para sinalização do comando atualmente sendo executado pelo robo,
-            foi utilizado um led RGB
+            Para o desenvolvimento deste projeto será utilizada a IDE do arduino
+            para o código.
+            <br /> O algoritmo básico para a movimentação dos carros se baseia
+            na leitura dos sensores e no acionamento, preferencialmente por um
+            algoritmo PID, dos motores <br /> O Controle dos motores é feito por
+            PWM ( 
+            <a href="https://en.wikipedia.org/wiki/Pulse-width_modulation">
+              Veja mais PWM )
+            </a>{" "}
+            através da modulção na ponte H, controlando os dois motores
+            responsáveis por mover e girar o robô
           </p>
-          <p>O circuito utiliza um arduino como controlador do robô</p>
         </div>
-        <Img src={CircuitoSegueLinhaImage} alt="circuitoSegueLinha" />
+        <Img src={ArduinoIDE} alt="editor de código arduino" />
       </div>
-      {open ? (
-        <>
-          <p>esse texto está escondido</p>
-        </>
-      ) : null}
     </Wrap>
   );
 }
